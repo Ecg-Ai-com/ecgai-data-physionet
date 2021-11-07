@@ -10,8 +10,8 @@ import wfdb
 from ecgai_logging.log_decorator import log
 from wfdb import Record
 
-from src import EcgRecord, DiagnosticCode
-from src import (
+from src.ecgai_data_physionet.models import EcgRecord, DiagnosticCode
+from src.ecgai_data_physionet.physionet import (
     PhysioNetDataSet,
     InValidRecordException,
     FileNotDownloadedException,

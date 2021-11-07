@@ -7,10 +7,10 @@ import os
 import pytest
 from fluentcheck import Is
 
-from src import physionet
-from src import EcgRecord, DiagnosticCode
-from src import InValidRecordException
-from src import PtbXl, MetaDataRow
+from src.ecgai_data_physionet import physionet
+from src.ecgai_data_physionet.models import EcgRecord, DiagnosticCode
+from src.ecgai_data_physionet.physionet import InValidRecordException
+from src.ecgai_data_physionet.ptbxl import PtbXl, MetaDataRow
 
 invalid_sample_rate = {0, -1, 55, 3256}
 valid_sample_rate = {100, 500}

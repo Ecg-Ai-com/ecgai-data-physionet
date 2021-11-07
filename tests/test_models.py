@@ -7,8 +7,8 @@ import numpy as np
 import pytest
 from fluentcheck import Is
 
-from src import models
-from src import EcgRecord, EcgLeadRecord, DiagnosticCode
+from src.ecgai_data_physionet import models
+from src.ecgai_data_physionet.models import EcgRecord, EcgLeadRecord, DiagnosticCode
 
 
 def module_logging_level():
